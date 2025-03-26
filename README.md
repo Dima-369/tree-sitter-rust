@@ -1,3 +1,7 @@
+# Patches
+
+- modify `queries/highlights.scm` to be more like Jetbrains
+
 # tree-sitter-rust
 
 [![CI][ci]](https://github.com/tree-sitter/tree-sitter-rust/actions/workflows/ci.yml)

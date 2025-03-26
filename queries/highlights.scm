@@ -90,8 +90,8 @@
 "::" @punctuation.delimiter
 ":" @punctuation.delimiter
 "." @punctuation.delimiter
-"," @punctuation.delimiter
-";" @punctuation.delimiter
+"," @keyword
+";" @keyword
 
 (parameter (identifier) @variable.parameter)
 
@@ -148,8 +148,8 @@
 (raw_string_literal) @string
 
 (boolean_literal) @constant.builtin
-(integer_literal) @constant.builtin
-(float_literal) @constant.builtin
+(integer_literal) @number
+(float_literal) @float
 
 (escape_sequence) @escape
 
@@ -158,4 +158,6 @@
 
 "*" @operator
 "&" @operator
-"'" @operator
+"'" @string
+
+(enum_variant) @property
